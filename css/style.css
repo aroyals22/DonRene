@@ -51,7 +51,7 @@ img {
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   background: #333;
   color: white;
   opacity: 0.7;
@@ -126,6 +126,9 @@ img {
 /* icons */
 .icons {
   padding: 30px;
+  align-items: center;
+
+
 }
 
 .icons h3 {
@@ -202,7 +205,7 @@ img {
   align-items: center;
   justify-content: center;
   text-align: center;
-  height: 200px;
+  height: 100px;
 }
 
 .footer a {
@@ -249,6 +252,10 @@ img {
   }
   .flex-items {
     flex-direction: column;
+  }
+  .flex-items .shipping p{
+    text-align: center;
+    width: 100px;
   }
 
   .flex-columns .column {
