@@ -145,11 +145,12 @@ img {
   background: #819c8e;
   color: white;
 }
+
 .column .contact-pic{
   background: url("../img/pexels-hugo-entrepreneur-5775727.jpg") no-repeat center center/cover;
   height: 100vh;
   position: relative;
-  color: white;  
+  color: whitesmoke;  
 }
 .column .contact-pic::before {
   content: "";
