@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/utilities.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Playfair+Display&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/cf1544761d.js" crossorigin="anonymous"></script>
+
+  <title>Don Abel & Rene Distribution</title>
+</head>
+
+<body id="home">
+  <header>
+    <div class="navbar map" id="navbar">
+      <div>
+        <a id="logo" href="./index.html"><img id="logo" src="./img/DAR-Dist-FullColor-Logo.png" alt=""></a>
+      </div>
+      <div class="social">
+        <a href="https://www.facebook.com/Dondistribution"> <i class="fab fa-facebook"></i></a>
+        <a href="https://www.youtube.com/channel/UCd44Mk5BzFonR6fFLjPD2cw"> <i class="fab fa-youtube "></i></a>
+        <a href="https://instagram.com/donardistibution_mezcal?igshid=1kkmkd2t3oh55"> <i
+            class="fab fa-instagram "></i></a>
+      </div>
+      <nav>
+
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./index.html#about">About</a></li>
+          <li><a href="./index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+
+    </div>
+  </header>
+  <section>
+    <div class="locations">
+      <div class="locations-list">
+        <ul>
+          <h2>Locations</h2>
+          <li>
+            <p>Kwick Shop Liquor - 112 E. Liberty St Wauconda, IL 60084</p>
+            <p>Home Run Liquor & Food Store - 106 E Main St, Round Lake Park, IL 60073</p>
+            <p>Garden Fresh Market - 400 Townline Rd Mundelein, IL 60060</p>
+            <p>Town and Country Liquor Store - 2944 W 47th St Chicago, IL 60632</p>
+          </li>
+        </ul>
+
+      </div>
+      <div id="map">
+
+      </div>
+
+
+    </div>
+  </section>
+  <footer class="footer bg-dark">
+    <div class="social">
+      <a href="https://www.facebook.com/Dondistribution"> <i class="fab fa-facebook fa-2x"></i></a>
+      <a href="https://www.youtube.com/channel/UCd44Mk5BzFonR6fFLjPD2cw"> <i class="fab fa-youtube fa-2x"></i></a>
+      <a href="https://instagram.com/donardistibution_mezcal?igshid=1kkmkd2t3oh55"> <i
+          class="fab fa-instagram fa-2x"></i></a>
+    </div>
+    <p>Copyright &copy; 2020 - Don Abel & Rene Distribution</p>
+  </footer>
+
+
+
+</body>
+<script>
+  function initMap() {
+    let location = { lat: 41.881832, lng: -87.623177 };
+    let map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 8,
+      center: location
+    });
+    var marker = new google.maps.Marker({
+      position: { lat: 42.2588997, lng: -88.1404396 },
+      map: map
+    })
+    var marker = new google.maps.Marker({
+      position: { lat: 42.3495894, lng: -88.0829137 },
+      map: map
+    })
+    var marker = new google.maps.Marker({
+      position: { lat: 42.2414553, lng: -87.9982818 },
+      map: map
+    })
+    var marker = new google.maps.Marker({
+      position: { lat: 41.8084595, lng: -87.7005805 },
+      map: map
+    })
+  }
+</script>
+<script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxYXZPzFitCF0vDcLqnjBtxTFsP3p6KfU&callback=initMap"
+  type="text/javascript"></script>
+
+</html>
