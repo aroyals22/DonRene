@@ -36,6 +36,7 @@
 
 .flex-items > div {
   padding: 20px;
+  width: 33%;
 }
 
 .flex-columns .row {

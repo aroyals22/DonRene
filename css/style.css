@@ -276,6 +276,10 @@ img {
   .flex-items {
     flex-direction: column;
   }
+  .flex-items > div {
+    padding: 20px;
+    width: 100%;
+  }
   .flex-items .shipping p{
     text-align: center;
     width: 200px;
@@ -294,5 +298,8 @@ img {
   }
   .hero .content img {
     display: flex;
+  }
+  .footer {
+    height: 150px;
   }
 }
